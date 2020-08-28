@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  public edadUno:number;
+  public edadDos:number;
+  public sumaEdades:number;
+  public promedio:number;
+  constructor() { }
+
+  sumarEdades() {
+    this.sumaEdades = this.edadUno+this.edadDos;
+  }
+
+  calcularPromedio(){
+    this.promedio = (this.edadUno+this.edadDos)/2;
+  }
+
+  limpiarNumeros(){
+    this.promedio = 0;
+    this.edadUno = 0;
+    this.edadDos = 0;
+    this.sumaEdades = 0;
+  }
+
 }
