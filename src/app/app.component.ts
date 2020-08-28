@@ -11,7 +11,6 @@ export class AppComponent {
   public edadDos:number;
   public sumaEdades:number;
   public promedio:number;
-  constructor() { }
 
   sumarEdades() {
     this.sumaEdades = this.edadUno+this.edadDos;
