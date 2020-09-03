@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router) {}
 
   login(){
-    if (this.user == 'admin@admin.com' && this.password == 'admin') {
+    if (this.user == 'admin' && this.password == 'admin') {
       this.router.navigate(['/Bienvenido']);
     } else {
       this.router.navigate(['/Error']);
