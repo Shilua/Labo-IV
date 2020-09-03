@@ -3,16 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './componentes/login/login.component';
-import { NuevoComponenteComponent } from './componentes/nuevo-componente/nuevo-componente.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { ErrorComponent } from './componentes/error/error.component';
+import { BienvenidoComponent } from './componentes/bienvenido/bienvenido.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NuevoComponenteComponent
+    ErrorComponent,
+    BienvenidoComponent,
   ],
   imports: [
     BrowserModule,
